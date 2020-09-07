@@ -11,6 +11,10 @@ const HocWithSizes = (Comp) => {
       window.addEventListener("resize", this.handleResize);
     }
 
+    componentWillUnmount(){
+      window.removeEventListener("resize", this.handleResize);
+    }
+
     handleResize = () => {
       this.setState(
         {
