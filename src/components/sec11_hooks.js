@@ -1,10 +1,10 @@
 /**
- * Hooks example
+ * Multiple hooks example
  */
 import React, { useState } from "react"
 const Form = () => {
   const [clicks, setClicks] = useState(0);
-  const [title, setTitle] = useState("");
+  const [title, setTitle] = useState("Empty");
 
   const handleClick = () => {
     setClicks( clicks+1)
