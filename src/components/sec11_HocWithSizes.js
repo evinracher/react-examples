@@ -1,3 +1,6 @@
+/**
+ * HOC example
+ */
 import React from "react";
 
 const HocWithSizes = (Comp) => {
